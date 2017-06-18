@@ -1,5 +1,10 @@
 # Semantic Versioning D Library
 
+* Author: Jonathan M. Wilbur
+* Copyright: Jonathan M. Wilbur
+* License: [Boost License 1.0](http://www.boost.org/LICENSE_1_0.txt)
+* Publication Year: 2017
+
 This is a library for strongly-typed Semantic Version identifiers. If you just
 want an array of numbers with no safeguards, this is not the library for you.
 This library follows the specifications for semantic versioning exactly, as
