@@ -1,6 +1,6 @@
 {
 	"name": "semver",
-	"description": "Strong type for Semantic Version, that follows the specification exactly.",
+	"description": "Strong type for Semantic Version that follows the specification exactly",
 	"authors": [ "Jonathan M. Wilbur" ],
 	"license": "BSL-1.0",
 	"targetType": "library"
