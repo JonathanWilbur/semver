@@ -629,7 +629,7 @@ public class SemanticVersion
     // NOTE: I could not make this nothrow, because of .all!() for some reason.
     // NOTE: I also could not make it override for some reason.
     public override @trusted
-    int opCmp(in Object other)
+    int opCmp(Object other)
     {
         debug import std.stdio : writeln;
 

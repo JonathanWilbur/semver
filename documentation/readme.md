@@ -104,6 +104,41 @@ assert(!sv1.isInitialDevelopment);
 assert(sv1.isPublic);
 ```
 
+## Client Utility
+
+This package includes a command-line utility, also named `semver`. Its usage
+signature looks like this:
+
+`semver {subcommand} versions ...`
+
+Where `{subcommand}` is one of the following:
+
+Subcommand   | Returns
+-------------|-----
+validate     | Whether all of the SVs are valid
+sort         | All of the SVs in ascending order
+ascend       | All of the SVs in ascending order
+descend      | All of the SVs in descending order
+major        | Only the major release numbers of all SVs
+minor        | Only the minor release numbers of all SVs
+patch        | Only the patch release numbers of all SVs
+prerelease   | Only the pre-release tags of all SVs
+build        | Only the build tags of all SVs
+public       | Whether each SV names a public API
+development  | Whether each SV names an API in initial development
+compatible   | Whether all SVs are compatible with each other
+incompatible | Whether all SVs are incompatible with each other
+
+As an example `semver sort 1.0.0 1.0.1-beta 1.0.2 1.4.0 2.0.0-alpha` returns:
+
+```
+1.0.0
+1.0.1-beta
+1.0.2
+1.4.0
+2.0.0-alpha
+```
+
 ## Compile and Install
 
 As of right now, there are no build scripts, since the source is a single file,
